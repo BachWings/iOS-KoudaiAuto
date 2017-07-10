@@ -1,0 +1,12 @@
+>> request.js:24:12 [master] pid:1574 get remote update info failed.
+>> port: 3456 was occupied, changed port: 3458
+>> index.js:18:12 [master] pid:1575 webdriver server start with config:
+ { port: 3458,
+  verbose: true,
+  always: true,
+  ip: '192.168.111.139',
+  host: 'lidejuandeMacBook-Air.local',
+  loaded_time: '2017-07-05 00:04:49' }
+>> middlewares.js:17:10 [master] pid:1575 base middlewares attached
+>> router.js:127:10 [master] pid:1575 router set
+>> webdriver sdk launched

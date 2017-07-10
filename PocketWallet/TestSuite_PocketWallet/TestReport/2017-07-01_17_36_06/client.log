@@ -1,0 +1,84 @@
+2017-07-01 17:36:11,178 - 192.168.56.101:5555 - INFO - platformName: Android
+2017-07-01 17:36:11,180 - 192.168.56.101:5555 - INFO - udid: 192.168.56.101:5555
+2017-07-01 17:36:11,180 - 192.168.56.101:5555 - INFO - package: cn.pocketwallet.pocketwallet
+
+2017-07-01 17:36:11,180 - 192.168.56.101:5555 - INFO - autoAcceptAlerts: True
+
+2017-07-01 17:36:11,181 - 192.168.56.101:5555 - INFO - macaca server port: 3470
+
+2017-07-01 17:36:28,789 - 192.168.56.101:5555 - INFO - --> skip_wizard_to_home
+2017-07-01 17:36:28,789 - 192.168.56.101:5555 - INFO - 	--> WizardPage.wait_page
+2017-07-01 17:36:28,868 - 192.168.56.101:5555 - INFO - 	--> WizardPage.skip
+2017-07-01 17:36:48,183 - 192.168.56.101:5555 - INFO - 	--> WizardPage.enter
+2017-07-01 17:36:51,336 - 192.168.56.101:5555 - INFO - <-- skip_wizard_to_home, Success
+
+2017-07-01 17:36:51,338 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUpClass
+2017-07-01 17:36:51,339 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUpClass, Success
+
+2017-07-01 17:36:51,339 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUp
+2017-07-01 17:36:51,340 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUp, Success
+
+2017-07-01 17:36:51,340 - 192.168.56.101:5555 - INFO - --> PWHomePage.test_HomePage_001_Open
+2017-07-01 17:36:51,340 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.wait_page
+2017-07-01 17:36:52,355 - 192.168.56.101:5555 - INFO - <-- PWHomePage.test_HomePage_001_Open, Success
+
+2017-07-01 17:36:52,357 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDown
+2017-07-01 17:36:52,360 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDown, Success
+
+2017-07-01 17:36:52,362 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUp
+2017-07-01 17:36:52,363 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUp, Success
+
+2017-07-01 17:36:52,364 - 192.168.56.101:5555 - INFO - --> PWHomePage.test_HomePage_002_Login_Pwd
+2017-07-01 17:36:52,365 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.click_usr_account
+2017-07-01 17:36:52,691 - 192.168.56.101:5555 - INFO -   --> LoginPage.new_valid_login_pwd
+2017-07-01 17:36:52,693 - 192.168.56.101:5555 - INFO - 	--> LoginPage.wait_page_pwd
+2017-07-01 17:36:54,979 - 192.168.56.101:5555 - INFO - 	--> LoginPage.input_account
+2017-07-01 17:36:59,042 - 192.168.56.101:5555 - INFO - 	--> LoginPage.input_password
+2017-07-01 17:37:01,956 - 192.168.56.101:5555 - INFO - 	--> LoginPage.login
+2017-07-01 17:37:03,605 - 192.168.56.101:5555 - INFO -   <-- LoginPage.new_valid_login_pwd, Success
+2017-07-01 17:37:03,606 - 192.168.56.101:5555 - INFO -   --> PocketWalletHomePage.is_login
+2017-07-01 17:37:03,606 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.login_status
+2017-07-01 17:37:03,656 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: WebDriverError.INVALID_SELECTOR
+Message: Argument was an invalid selector (e.g. XPath/CSS).
+
+2017-07-01 17:37:03,657 - 192.168.56.101:5555 - ERROR - 	<-- PocketWalletHomePage.login_status, WebDriverException, Error
+2017-07-01 17:37:05,166 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: None
+Message: IMAGE:PocketWalletHomePage.login_status-20170701173703.PNG
+
+2017-07-01 17:37:05,166 - 192.168.56.101:5555 - ERROR -   <-- PocketWalletHomePage.is_login, WebDriverException, Error
+2017-07-01 17:37:05,166 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: None
+Message: 
+Error: None
+Message: IMAGE:PocketWalletHomePage.login_status-20170701173703.PNG
+
+
+2017-07-01 17:37:05,166 - 192.168.56.101:5555 - ERROR - <-- PWHomePage.test_HomePage_002_Login_Pwd, WebDriverException, Error
+
+2017-07-01 17:37:05,167 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDown
+2017-07-01 17:37:05,167 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDown, Success
+
+2017-07-01 17:37:05,172 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUp
+2017-07-01 17:37:05,173 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUp, Success
+
+2017-07-01 17:37:05,173 - 192.168.56.101:5555 - INFO - --> PWHomePage.test_HomePage_003_Withdraw
+2017-07-01 17:37:05,173 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.click_tx
+2017-07-01 17:37:05,202 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: WebDriverError.INVALID_SELECTOR
+Message: Argument was an invalid selector (e.g. XPath/CSS).
+
+2017-07-01 17:37:05,202 - 192.168.56.101:5555 - ERROR - 	<-- PocketWalletHomePage.click_tx, WebDriverException, Error
+2017-07-01 17:37:06,347 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: None
+Message: IMAGE:PocketWalletHomePage.click_tx-20170701173705.PNG
+
+2017-07-01 17:37:06,347 - 192.168.56.101:5555 - ERROR - <-- PWHomePage.test_HomePage_003_Withdraw, WebDriverException, Error
+
+2017-07-01 17:37:06,347 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDown
+2017-07-01 17:37:06,348 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDown, Success
+
+2017-07-01 17:37:06,348 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDownClass
+2017-07-01 17:37:06,348 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDownClass, Success
+

@@ -1,0 +1,13 @@
+>> request.js:24:12 [master] pid:2291 get remote update info failed.
+>> index.js:18:12 [master] pid:2292 webdriver server start with config:
+ { port: 3459,
+  verbose: true,
+  always: true,
+  ip: '192.168.111.139',
+  host: 'lidejuandeMacBook-Air.local',
+  loaded_time: '2017-07-04 15:50:06' }
+>> middlewares.js:17:10 [master] pid:2292 base middlewares attached
+>> router.js:127:10 [master] pid:2292 router set
+>> webdriver sdk launched
+>> responseHandler.js:11:12 [master] pid:2292 Recieve HTTP Request from Client[2017-07-04 15:50:07]: method: GET url: /wd/hub/status, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:2292 Send HTTP Respone to Client[2017-07-04 15:50:07]: {"sessionId":"","status":0,"value":"{\"build\":{},\"os\":{\"arch\":\"x64\",\"name\":\"darwin\",\"version\":\"\"}}"}

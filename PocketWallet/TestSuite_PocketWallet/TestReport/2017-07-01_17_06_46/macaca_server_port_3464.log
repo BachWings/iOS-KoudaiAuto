@@ -1,0 +1,104 @@
+>> request.js:24:12 [master] pid:1850 get remote update info failed.
+>> index.js:18:12 [master] pid:1851 webdriver server start with config:
+ { port: 3464,
+  verbose: true,
+  always: true,
+  ip: '192.168.111.82',
+  host: 'lidejuandeMacBook-Air.local',
+  loaded_time: '2017-07-01 17:06:48' }
+>> middlewares.js:17:10 [master] pid:1851 base middlewares attached
+>> router.js:127:10 [master] pid:1851 router set
+>> webdriver sdk launched
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:06:48]: method: GET url: /wd/hub/status, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:06:48]: {"sessionId":"","status":0,"value":"{\"build\":{},\"os\":{\"arch\":\"x64\",\"name\":\"darwin\",\"version\":\"\"}}"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:06:48]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"Android","udid":"192.168.56.101:5555","package":"cn.pocketwallet.pocketwallet","autoAcceptAlerts":true}}
+>> session.js:47:10 [master] pid:1851 Creating session, sessionId: f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78.
+>> uiautomator-client.js:56:14 [master] pid:1851 INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.macaca.android.testing.UIAutomatorWD:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=MacacaTestRunner
+INSTRUMENTATION_STATUS: class=com.macaca.android.testing.UIAutomatorWD
+INSTRUMENTATION_STATUS: current=1
+
+>> uiautomator-client.js:56:14 [master] pid:1851 INSTRUMENTATION_STATUS_CODE: 1
+
+>> uiautomator-client.js:56:14 [master] pid:1851 INSTRUMENTATION_STATUS: stream=
+UIAutomatorWD->http://localhost:9002<-UIAutomatorWD
+INSTRUMENTATION_STATUS_CODE: 0
+
+>> UIAutomatorWD http server ready
+>> macaca-android.js:295:10 [master] pid:1851 start app with: {"package":"cn.pocketwallet.pocketwallet"}
+>> responseHandler.js:47:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:04]: {"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78","status":0,"value":"{\"platformName\":\"Android\",\"udid\":\"192.168.56.101:5555\",\"package\":\"cn.pocketwallet.pocketwallet\",\"autoAcceptAlerts\":true}"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:04]: method: POST url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/element, jsonBody: {"using":"class name","value":"android.widget.ImageView"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":null}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/element:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/element:POST with body: {"using":"class name","value":"android.widget.ImageView"}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:04]: {"status":0,"value":"{\"ELEMENT\":\"1\"}","sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:04]: method: GET url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/element/1/displayed, jsonBody: {}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/element/1/displayed:GET to http://127.0.0.1:9002/wd/hub/session/:sessionId/element/1/displayed:GET with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"value":true,"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:04]: {"status":0,"value":"true","sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:04]: method: GET url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/window/current/size, jsonBody: {}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/window/current/size:GET to http://127.0.0.1:9002/wd/hub/session/:sessionId/window/current/size:GET with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"value":{"height":2560,"width":1440},"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:04]: {"status":0,"value":"{\"height\":2560,\"width\":1440}","sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:04]: method: POST url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/actions, jsonBody: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/actions:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/actions:POST with body: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:09]: {"status":0,"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:10]: method: GET url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/window/current/size, jsonBody: {}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/window/current/size:GET to http://127.0.0.1:9002/wd/hub/session/:sessionId/window/current/size:GET with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"value":{"height":2560,"width":1440},"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:10]: {"status":0,"value":"{\"height\":2560,\"width\":1440}","sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:10]: method: POST url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/actions, jsonBody: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/actions:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/actions:POST with body: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:16]: {"status":0,"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:17]: method: GET url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/window/current/size, jsonBody: {}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/window/current/size:GET to http://127.0.0.1:9002/wd/hub/session/:sessionId/window/current/size:GET with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"value":{"height":2560,"width":1440},"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:17]: {"status":0,"value":"{\"height\":2560,\"width\":1440}","sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:17]: method: POST url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/actions, jsonBody: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/actions:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/actions:POST with body: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:22]: {"status":0,"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:23]: method: GET url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/window/current/size, jsonBody: {}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/window/current/size:GET to http://127.0.0.1:9002/wd/hub/session/:sessionId/window/current/size:GET with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"value":{"height":2560,"width":1440},"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:23]: {"status":0,"value":"{\"height\":2560,\"width\":1440}","sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:23]: method: POST url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/actions, jsonBody: {"actions":[{"x":720,"y":1280,"type":"tap"}]}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:1851 Proxy: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/actions:POST to http://127.0.0.1:9002/wd/hub/session/:sessionId/actions:POST with body: {"actions":[{"x":720,"y":1280,"type":"tap"}]}
+>> proxy.js:83:20 [master] pid:1851 Got response with status 200: {"status":0,"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> session.js:107:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:23]: {"status":0,"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78"}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:26]: method: GET url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/screenshot, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:27]: {"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78","status":0,"value":"\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Wl4W/WZ9/Gfdsm2vMVb7GxkI4aEEpYESqG0rF1JgG7QEOhMZzoUykyvKVCeZ+ZhOg2003ZaSOiUtgwlQPfihNImhACBQiAOAQIkNomzet8X2ZJsHUnPC0fGi7xLlpfv57pyJTlH539uy7Jf/HTr/puWLF0WFgAAAAAAAAAAMWZOdAEAAAAAAAAAgOmJABoAAAAAAAAAEBcE0AAAAAAAAACAuCCABgAAAAAAAADEBQE0AAAAAAAAACAuCKABAAAAAAAAAHFBAA0AAAAAAAAAiAsCaAAAAAAAAABAXBBAAwAAAAAAAADiggAaAAAA..."}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:27]: method: GET url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/screenshot, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:29]: {"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78","status":0,"value":"\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Wl4W/WZ9/Gfdsm2vMVb7GxkI4aEEpYESqG0rF1JgG7QEOhMZzoUykyvKVCeZ+ZhOg2003ZaSOiUtgwlQPfihNImhACBQiAOAQIkNomzet8X2ZJsHUnPC0fGi7xLlpfv57pyJTlH539uy7Jf/HTr/puWLF0WFgAAAAAAAAAAMWZOdAEAAAAAAAAAgOmJABoAAAAAAAAAEBcE0AAAAAAAAACAuCCABgAAAAAAAADEBQE0AAAAAAAAACAuCKABAAAAAAAAAHFBAA0AAAAAAAAAiAsCaAAAAAAAAABAXBBAAwAAAAAAAADiggAaAAAA..."}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:29]: method: GET url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78/screenshot, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:30]: {"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78","status":0,"value":"\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Wl4W/WZ9/Gfdsm2vMVb7GxkI4aEEpYESqG0rF1JgG7QEOhMZzoUykyvKVCeZ+ZhOg2003ZaSOiUtgwlQPfihNImhACBQiAOAQIkNomzet8X2ZJsHUnPC0fGi7xLlpfv57pyJTlH539uy7Jf/HTr/puWLF0WFgAAAAAAAAAAMWZOdAEAAAAAAAAAgOmJABoAAAAAAAAAEBcE0AAAAAAAAACAuCCABgAAAAAAAADEBQE0AAAAAAAAACAuCKABAAAAAAAAAHFBAA0AAAAAAAAAiAsCaAAAAAAAAABAXBBAAwAAAAAAAADiggAaAAAA..."}
+>> responseHandler.js:11:12 [master] pid:1851 Recieve HTTP Request from Client[2017-07-01 17:07:30]: method: DELETE url: /wd/hub/session/f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78, jsonBody: {}
+>> session.js:80:12 [master] pid:1851 Delete session, sessionId: f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78
+>> responseHandler.js:47:14 [master] pid:1851 Send HTTP Respone to Client[2017-07-01 17:07:30]: {"sessionId":"f8a3b0fb-23ec-4967-a7b2-1ddfd3de3c78","status":0}
+>> uiautomator-client.js:56:14 [master] pid:1851 INSTRUMENTATION_RESULT: shortMsg=Process crashed.
+INSTRUMENTATION_CODE: 0
+

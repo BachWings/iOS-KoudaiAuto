@@ -1,0 +1,406 @@
+>> request.js:24:12 [master] pid:5916 get remote update info failed.
+>> index.js:18:12 [master] pid:5917 webdriver server start with config:
+ { port: 3456,
+  verbose: true,
+  always: true,
+  ip: '192.168.111.235',
+  host: 'lidejuandeMacBook-Air.local',
+  loaded_time: '2017-07-06 16:53:48' }
+>> middlewares.js:17:10 [master] pid:5917 base middlewares attached
+>> router.js:127:10 [master] pid:5917 router set
+>> webdriver sdk launched
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 16:53:49]: method: GET url: /wd/hub/status, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:5917 Send HTTP Respone to Client[2017-07-06 16:53:49]: {"sessionId":"","status":0,"value":"{\"build\":{},\"os\":{\"arch\":\"x64\",\"name\":\"darwin\",\"version\":\"\"}}"}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 16:53:49]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"露娜萌","udid":"78fe1acf23525c7efc6ed35a4a959599c24df814","bundleId":"cn.pocketwallet.pocketwallet","autoAcceptAlerts":true}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 1bd04afc-ca0f-47cc-ae16-ac6e99702931.
+/usr/local/lib/node_modules/macaca-ios/node_modules/_ios-device@0.1.4@ios-device/node_modules/ios-deploy/build/Release/ios-deploy
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: App 'cn.pocketwallet.pocketwallet' is neither installed, nor provided!
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: App 'cn.pocketwallet.pocketwallet' is neither installed, nor provided!
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:241:11)
+    at IOS.startRealDevice.next (<anonymous>)
+    at onFulfilled (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:65:19)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 16:53:51]: {"sessionId":"1bd04afc-ca0f-47cc-ae16-ac6e99702931","status":13,"value":{"message":"App 'cn.pocketwallet.pocketwallet' is neither installed, nor provided!"}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:41:36]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 97e05da4-b34b-4cf8-bb91-533da3d94d34.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:41:38.626 ios-deploy[8304:451114] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:41:38]: {"sessionId":"97e05da4-b34b-4cf8-bb91-533da3d94d34","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:41:38]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: e5c1803d-3171-4b17-b12a-d8ba90f9fd26.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:41:40.977 ios-deploy[8309:451318] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:41:40]: {"sessionId":"e5c1803d-3171-4b17-b12a-d8ba90f9fd26","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:41:40]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 6101b59d-9e6d-4a39-a159-eeb513201159.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:41:43.248 ios-deploy[8313:451348] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:41:43]: {"sessionId":"6101b59d-9e6d-4a39-a159-eeb513201159","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:41:43]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: c1a455a6-b3b5-40b9-9c40-5006ff26e2fe.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:41:45.557 ios-deploy[8317:451377] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:41:45]: {"sessionId":"c1a455a6-b3b5-40b9-9c40-5006ff26e2fe","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:41:45]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 710fb851-ee66-4933-8895-70c8754e0d8b.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:41:47.868 ios-deploy[8321:451408] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:41:47]: {"sessionId":"710fb851-ee66-4933-8895-70c8754e0d8b","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:41:47]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: f0a93e60-5feb-488d-9453-ad56d1701f90.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:41:50.220 ios-deploy[8325:451442] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:41:50]: {"sessionId":"f0a93e60-5feb-488d-9453-ad56d1701f90","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:41:50]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: acfd220f-40aa-470f-bfce-9739fdb5bdc6.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:41:53.458 ios-deploy[8329:451477] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:41:53]: {"sessionId":"acfd220f-40aa-470f-bfce-9739fdb5bdc6","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:41:53]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 891e50cc-18e8-4457-8377-8e00d81810b4.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:41:56.913 ios-deploy[8334:451526] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:41:56]: {"sessionId":"891e50cc-18e8-4457-8377-8e00d81810b4","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:41:56]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 88e05a44-4120-4ed0-8a2b-da07c62e1277.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:00.245 ios-deploy[8339:451578] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:00]: {"sessionId":"88e05a44-4120-4ed0-8a2b-da07c62e1277","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:00]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: a8a1d0bd-8811-41c6-8d0e-8e26dc8c0c60.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:03.541 ios-deploy[8343:451612] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:03]: {"sessionId":"a8a1d0bd-8811-41c6-8d0e-8e26dc8c0c60","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:03]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 0212b5cb-032c-4630-bc93-c31dd4a9ea68.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:06.991 ios-deploy[8347:451664] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:06]: {"sessionId":"0212b5cb-032c-4630-bc93-c31dd4a9ea68","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:07]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: ac2c6426-94eb-4da8-8f97-5b1939962d91.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:10.499 ios-deploy[8351:451697] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:10]: {"sessionId":"ac2c6426-94eb-4da8-8f97-5b1939962d91","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:10]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 7f54275c-f430-4aa8-8eef-d8967d13cace.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:12]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 1ffb6263-af25-4175-a6d3-e2bb8a7f15a9.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:15]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 0bb76ba4-3a05-44c7-94aa-fe88bd4f3aa0.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:19.448 ios-deploy[8369:452578] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:19]: {"sessionId":"7f54275c-f430-4aa8-8eef-d8967d13cace","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:19.453 ios-deploy[8370:452583] [ !! ] Error 0xe8000067: There was an internal API error. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:19]: {"sessionId":"1ffb6263-af25-4175-a6d3-e2bb8a7f15a9","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:23.677 ios-deploy[8371:452589] [ !! ] Error 0xe8000010: The file already exists. AMDeviceSecureTransferPath(0, device, url, options, transfer_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:23]: {"sessionId":"0bb76ba4-3a05-44c7-94aa-fe88bd4f3aa0","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:23]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: de55db6e-2bcd-4208-ad41-a23b8582e500.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:27.049 ios-deploy[8375:452655] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:27]: {"sessionId":"de55db6e-2bcd-4208-ad41-a23b8582e500","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:27]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 6247592b-0aba-4c76-9efa-cbb5ceb89579.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:30.389 ios-deploy[8379:452693] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:30]: {"sessionId":"6247592b-0aba-4c76-9efa-cbb5ceb89579","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:30]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: b3feeeda-5071-41b7-9e94-f0aa6213c4e5.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:33.730 ios-deploy[8383:452725] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:33]: {"sessionId":"b3feeeda-5071-41b7-9e94-f0aa6213c4e5","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:33]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 3887d2b0-785c-485e-8322-192d36c90446.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:37.064 ios-deploy[8387:452769] [ !! ] Error 0xe8000067: There was an internal API error. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:37]: {"sessionId":"3887d2b0-785c-485e-8322-192d36c90446","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:37]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 14821758-3a77-4dfc-b7b2-ba7afb630377.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:40.371 ios-deploy[8391:452806] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:40]: {"sessionId":"14821758-3a77-4dfc-b7b2-ba7afb630377","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:40]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: 0662c381-ed1b-4cc1-8d89-3d7bb1551bf2.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> responseHandler.js:11:12 [master] pid:5917 Recieve HTTP Request from Client[2017-07-06 17:42:43]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"iPhone 7 Plus","app":"https://npmcdn.com/ios-app-bootstrap@latest/build/ios-app-bootstrap.zip","reuse":1,"udid":"78fe1acf23525c7efc6ed35a4a959599c24df814"}}
+>> session.js:47:10 [master] pid:5917 Creating session, sessionId: d04ae514-4b60-4f93-ba26-41fb3c640eed.
+>> get /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip from cache
+>> sha:d2e65bba467659ef610b369f2ee599c1
+>> helper.js:194:12 [master] pid:5917 Unzipping local app form /Users/lidejuan/.macaca-temp/ios-app-bootstrap.zip
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:43.679 ios-deploy[8395:452909] [ !! ] Error 0xe8008014: The executable contains an invalid signature. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:46]: {"sessionId":"0662c381-ed1b-4cc1-8d89-3d7bb1551bf2","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}
+CFBundleIdentifier is xudafeng.ios-app-bootstrap
+Get bundleId xudafeng.ios-app-bootstrap from plist /var/folders/2f/mrqcwfns4vq_8hkm_kybr1jr0000gn/T/ios-app-bootstrap.app/Info.plist
+>> macaca-ios.js:270:12 [master] pid:5917 App 'xudafeng.ios-app-bootstrap' is not installed.
+>> macaca-ios.js:275:14 [master] pid:5917 2017-07-06 17:42:47.743 ios-deploy[8403:453466] [ !! ] Error 0xe8000067: There was an internal API error. AMDeviceSecureInstallApplication(0, device, url, options, install_callback, 0)
+
+>> responseHandler.js:54:12 [master] pid:5917 Send Error Respone to Client: UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+>> responseHandler.js:60:14 [master] pid:5917 UnknownError: Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually.
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:276:13)
+    at IOS.startRealDevice.throw (<anonymous>)
+    at onRejected (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:81:24)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:5917 Send Bad HTTP Respone to Client[2017-07-06 17:42:47]: {"sessionId":"d04ae514-4b60-4f93-ba26-41fb3c640eed","status":13,"value":{"message":"Failed to install app 'xudafeng.ios-app-bootstrap', please install the app manually."}}

@@ -1,0 +1,12 @@
+>> index.js:18:12 [master] pid:2461 webdriver server start with config:
+ { port: 3462,
+  verbose: true,
+  always: true,
+  ip: '192.168.111.139',
+  host: 'lidejuandeMacBook-Air.local',
+  loaded_time: '2017-07-04 15:58:54' }
+>> middlewares.js:17:10 [master] pid:2461 base middlewares attached
+>> router.js:127:10 [master] pid:2461 router set
+>> webdriver sdk launched
+>> responseHandler.js:11:12 [master] pid:2461 Recieve HTTP Request from Client[2017-07-04 15:58:54]: method: GET url: /wd/hub/status, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:2461 Send HTTP Respone to Client[2017-07-04 15:58:54]: {"sessionId":"","status":0,"value":"{\"build\":{},\"os\":{\"arch\":\"x64\",\"name\":\"darwin\",\"version\":\"\"}}"}

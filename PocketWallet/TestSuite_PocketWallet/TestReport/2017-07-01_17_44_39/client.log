@@ -1,0 +1,79 @@
+2017-07-01 17:44:42,185 - 192.168.56.101:5555 - INFO - platformName: Android
+2017-07-01 17:44:42,187 - 192.168.56.101:5555 - INFO - udid: 192.168.56.101:5555
+2017-07-01 17:44:42,187 - 192.168.56.101:5555 - INFO - package: cn.pocketwallet.pocketwallet
+
+2017-07-01 17:44:42,187 - 192.168.56.101:5555 - INFO - autoAcceptAlerts: True
+
+2017-07-01 17:44:42,188 - 192.168.56.101:5555 - INFO - macaca server port: 3473
+
+2017-07-01 17:44:58,546 - 192.168.56.101:5555 - INFO - --> skip_wizard_to_home
+2017-07-01 17:44:58,547 - 192.168.56.101:5555 - INFO - 	--> WizardPage.wait_page
+2017-07-01 17:44:58,664 - 192.168.56.101:5555 - INFO - 	--> WizardPage.skip
+2017-07-01 17:45:18,793 - 192.168.56.101:5555 - INFO - 	--> WizardPage.enter
+2017-07-01 17:45:21,943 - 192.168.56.101:5555 - INFO - <-- skip_wizard_to_home, Success
+
+2017-07-01 17:45:21,944 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUpClass
+2017-07-01 17:45:21,945 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUpClass, Success
+
+2017-07-01 17:45:21,945 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUp
+2017-07-01 17:45:21,946 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUp, Success
+
+2017-07-01 17:45:21,946 - 192.168.56.101:5555 - INFO - --> PWHomePage.test_HomePage_001_Open
+2017-07-01 17:45:21,947 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.wait_page
+2017-07-01 17:45:22,939 - 192.168.56.101:5555 - INFO - <-- PWHomePage.test_HomePage_001_Open, Success
+
+2017-07-01 17:45:22,941 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDown
+2017-07-01 17:45:22,942 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDown, Success
+
+2017-07-01 17:45:22,944 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUp
+2017-07-01 17:45:22,945 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUp, Success
+
+2017-07-01 17:45:22,945 - 192.168.56.101:5555 - INFO - --> PWHomePage.test_HomePage_002_Login_Pwd
+2017-07-01 17:45:22,946 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.click_usr_account
+2017-07-01 17:45:23,810 - 192.168.56.101:5555 - INFO -   --> LoginPage.new_valid_login_pwd
+2017-07-01 17:45:23,812 - 192.168.56.101:5555 - INFO - 	--> LoginPage.wait_page_pwd
+2017-07-01 17:45:34,818 - 192.168.56.101:5555 - INFO - 	--> LoginPage.input_account
+2017-07-01 17:45:35,059 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: WebDriverError.INVALID_SELECTOR
+Message: Argument was an invalid selector (e.g. XPath/CSS).
+
+2017-07-01 17:45:35,060 - 192.168.56.101:5555 - ERROR - 	<-- LoginPage.input_account, WebDriverException, Error
+2017-07-01 17:45:36,863 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: None
+Message: IMAGE:LoginPage.input_account-20170701174535.PNG
+
+2017-07-01 17:45:36,864 - 192.168.56.101:5555 - ERROR -   <-- LoginPage.new_valid_login_pwd, WebDriverException, Error
+2017-07-01 17:45:36,864 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: None
+Message: 
+Error: None
+Message: IMAGE:LoginPage.input_account-20170701174535.PNG
+
+
+2017-07-01 17:45:36,864 - 192.168.56.101:5555 - ERROR - <-- PWHomePage.test_HomePage_002_Login_Pwd, WebDriverException, Error
+
+2017-07-01 17:45:36,864 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDown
+2017-07-01 17:45:36,865 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDown, Success
+
+2017-07-01 17:45:36,870 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUp
+2017-07-01 17:45:36,870 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUp, Success
+
+2017-07-01 17:45:36,871 - 192.168.56.101:5555 - INFO - --> PWHomePage.test_HomePage_003_Withdraw
+2017-07-01 17:45:36,871 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.click_tx
+2017-07-01 17:45:36,918 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: WebDriverError.INVALID_SELECTOR
+Message: Argument was an invalid selector (e.g. XPath/CSS).
+
+2017-07-01 17:45:36,918 - 192.168.56.101:5555 - ERROR - 	<-- PocketWalletHomePage.click_tx, WebDriverException, Error
+2017-07-01 17:45:38,680 - 192.168.56.101:5555 - ERROR - WebDriverException, 
+Error: None
+Message: IMAGE:PocketWalletHomePage.click_tx-20170701174536.PNG
+
+2017-07-01 17:45:38,681 - 192.168.56.101:5555 - ERROR - <-- PWHomePage.test_HomePage_003_Withdraw, WebDriverException, Error
+
+2017-07-01 17:45:38,681 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDown
+2017-07-01 17:45:38,682 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDown, Success
+
+2017-07-01 17:45:38,684 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDownClass
+2017-07-01 17:45:38,685 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDownClass, Success
+

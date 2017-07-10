@@ -1,0 +1,192 @@
+>> index.js:18:12 [master] pid:2416 webdriver server start with config:
+ { port: 3471,
+  verbose: true,
+  always: true,
+  ip: '192.168.111.82',
+  host: 'lidejuandeMacBook-Air.local',
+  loaded_time: '2017-07-01 17:37:19' }
+>> middlewares.js:17:10 [master] pid:2416 base middlewares attached
+>> router.js:127:10 [master] pid:2416 router set
+>> webdriver sdk launched
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:19]: method: GET url: /wd/hub/status, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:19]: {"sessionId":"","status":0,"value":"{\"build\":{},\"os\":{\"arch\":\"x64\",\"name\":\"darwin\",\"version\":\"\"}}"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:20]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"Android","udid":"192.168.56.101:5555","package":"cn.pocketwallet.pocketwallet","autoAcceptAlerts":true}}
+>> session.js:47:10 [master] pid:2416 Creating session, sessionId: a512c8ab-aa63-439d-9d2d-bd79627b7d11.
+>> uiautomator-client.js:56:14 [master] pid:2416 INSTRUMENTATION_STATUS: numtests=1
+>> uiautomator-client.js:56:14 [master] pid:2416 
+INSTRUMENTATION_STATUS: stream=
+com.macaca.android.testing.UIAutomatorWD:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=MacacaTestRunner
+INSTRUMENTATION_STATUS: class=com.macaca.android.testing.UIAutomatorWD
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+
+>> uiautomator-client.js:56:14 [master] pid:2416 INSTRUMENTATION_STATUS: stream=
+UIAutomatorWD->http://localhost:9008<-UIAutomatorWD
+INSTRUMENTATION_STATUS_CODE: 0
+
+>> UIAutomatorWD http server ready
+>> macaca-android.js:295:10 [master] pid:2416 start app with: {"package":"cn.pocketwallet.pocketwallet"}
+>> responseHandler.js:47:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:37]: {"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11","status":0,"value":"{\"platformName\":\"Android\",\"udid\":\"192.168.56.101:5555\",\"package\":\"cn.pocketwallet.pocketwallet\",\"autoAcceptAlerts\":true}"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:37]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"class name","value":"android.widget.ImageView"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":null}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"class name","value":"android.widget.ImageView"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:37]: {"status":0,"value":"{\"ELEMENT\":\"1\"}","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:37]: method: GET url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element/1/displayed, jsonBody: {}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element/1/displayed:GET to http://127.0.0.1:9008/wd/hub/session/:sessionId/element/1/displayed:GET with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"value":true,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:37]: {"status":0,"value":"true","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:37]: method: GET url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/window/current/size, jsonBody: {}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/window/current/size:GET to http://127.0.0.1:9008/wd/hub/session/:sessionId/window/current/size:GET with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"value":{"height":2560,"width":1440},"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:37]: {"status":0,"value":"{\"height\":2560,\"width\":1440}","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:37]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/actions, jsonBody: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/actions:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/actions:POST with body: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:43]: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:44]: method: GET url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/window/current/size, jsonBody: {}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/window/current/size:GET to http://127.0.0.1:9008/wd/hub/session/:sessionId/window/current/size:GET with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"value":{"height":2560,"width":1440},"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:44]: {"status":0,"value":"{\"height\":2560,\"width\":1440}","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:44]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/actions, jsonBody: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/actions:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/actions:POST with body: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:49]: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:50]: method: GET url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/window/current/size, jsonBody: {}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/window/current/size:GET to http://127.0.0.1:9008/wd/hub/session/:sessionId/window/current/size:GET with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"value":{"height":2560,"width":1440},"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:50]: {"status":0,"value":"{\"height\":2560,\"width\":1440}","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:50]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/actions, jsonBody: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/actions:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/actions:POST with body: {"actions":[{"fromX":1296,"fromY":1280,"toX":288,"toY":1280,"duration":1,"type":"drag"}]}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:55]: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:56]: method: GET url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/window/current/size, jsonBody: {}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/window/current/size:GET to http://127.0.0.1:9008/wd/hub/session/:sessionId/window/current/size:GET with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"value":{"height":2560,"width":1440},"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:56]: {"status":0,"value":"{\"height\":2560,\"width\":1440}","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:37:56]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/actions, jsonBody: {"actions":[{"x":720,"y":1280,"type":"tap"}]}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/actions:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/actions:POST with body: {"actions":[{"x":720,"y":1280,"type":"tap"}]}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:37:57]: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:00]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/credit_pay_wrapper"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/credit_pay_wrapper"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:02]: {"status":0,"value":"{\"ELEMENT\":\"1\"}","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:02]: method: GET url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element/1/displayed, jsonBody: {}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element/1/displayed:GET to http://127.0.0.1:9008/wd/hub/session/:sessionId/element/1/displayed:GET with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"value":true,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:02]: {"status":0,"value":"true","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:02]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/tv_user_account"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/tv_user_account"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"value":{"ELEMENT":"1"},"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:02]: {"status":0,"value":"{\"ELEMENT\":\"1\"}","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:02]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element/1/click, jsonBody: {}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element/1/click:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element/1/click:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:02]: {"status":0,"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:02]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:03]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:04]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:05]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:06]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:06]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:07]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:07]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:08]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:08]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:09]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:09]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:10]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:10]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:11]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:11]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:12]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_password_or_verification"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:12]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:12]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_account"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/edt_account"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:12]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:12]: method: GET url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/screenshot, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:14]: {"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11","status":0,"value":"\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Xd8FHX+P/DXJJtGGqGHIEUgBThApZxdELsiKOqpp+idd18b3u/7vbNhwYKAFQve2U7PenoWsJ0NRe/UO5WuQgihBNIbqaRu9vdHCrvZKZ+Znbab1/Me8ZKdmc985rOzG+aVz75HGp+Z7QMRERERERERERERkcminO4AEREREREREREREUUmBtBEREREREREREREZAkG0ERERERERERERERkCQbQRERERERERERERGQJBtBEREREREREREREZAkG0ERERERERERERERkCQbQRERERERERERERGQJBtBEREREREREREREZAkG0ERE..."}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:14]: method: POST url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element, jsonBody: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/withdraw_wrapper"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/:sessionId/accept_alert:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/accept_alert:POST with body: {}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":0,"sessionId":":sessionId"}
+>> proxy.js:55:14 [master] pid:2416 Proxy: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/element:POST to http://127.0.0.1:9008/wd/hub/session/:sessionId/element:POST with body: {"using":"id","value":"cn.pocketwallet.pocketwallet:id/withdraw_wrapper"}
+>> proxy.js:83:20 [master] pid:2416 Got response with status 200: {"status":32,"value":"Argument was an invalid selector (e.g. XPath/CSS).","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> session.js:107:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:15]: {"status":32,"value":"\"Argument was an invalid selector (e.g. XPath/CSS).\"","sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11"}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:15]: method: GET url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11/screenshot, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:16]: {"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11","status":0,"value":"\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3Xd8FHX+P/DXJJtGGqGHIEUgBThApZxdELsiKOqpp+idd18b3u/7vbNhwYKAFQve2U7PenoWsJ0NRe/UO5WuQgihBNIbqaRu9vdHCrvZKZ+Znbab1/Me8ZKdmc985rOzG+aVz75HGp+Z7QMRERERERERERERkcminO4AEREREREREREREUUmBtBEREREREREREREZAkG0ERERERERERERERkCQbQRERERERERERERGQJBtBEREREREREREREZAkG0ERERERERERERERkCQbQRERERERERERERGQJBtBEREREREREREREZAkG0ERE..."}
+>> responseHandler.js:11:12 [master] pid:2416 Recieve HTTP Request from Client[2017-07-01 17:38:16]: method: DELETE url: /wd/hub/session/a512c8ab-aa63-439d-9d2d-bd79627b7d11, jsonBody: {}
+>> session.js:80:12 [master] pid:2416 Delete session, sessionId: a512c8ab-aa63-439d-9d2d-bd79627b7d11
+>> responseHandler.js:47:14 [master] pid:2416 Send HTTP Respone to Client[2017-07-01 17:38:16]: {"sessionId":"a512c8ab-aa63-439d-9d2d-bd79627b7d11","status":0}
+>> uiautomator-client.js:56:14 [master] pid:2416 INSTRUMENTATION_RESULT: shortMsg=Process crashed.
+>> uiautomator-client.js:56:14 [master] pid:2416 
+INSTRUMENTATION_CODE: 0
+

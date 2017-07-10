@@ -1,0 +1,23 @@
+>> index.js:18:12 [master] pid:1883 webdriver server start with config:
+ { port: 3460,
+  verbose: true,
+  always: true,
+  ip: '192.168.111.139',
+  host: 'lidejuandeMacBook-Air.local',
+  loaded_time: '2017-07-05 00:37:09' }
+>> middlewares.js:17:10 [master] pid:1883 base middlewares attached
+>> router.js:127:10 [master] pid:1883 router set
+>> webdriver sdk launched
+>> responseHandler.js:11:12 [master] pid:1883 Recieve HTTP Request from Client[2017-07-05 00:37:10]: method: GET url: /wd/hub/status, jsonBody: {}
+>> responseHandler.js:47:14 [master] pid:1883 Send HTTP Respone to Client[2017-07-05 00:37:10]: {"sessionId":"","status":0,"value":"{\"build\":{},\"os\":{\"arch\":\"x64\",\"name\":\"darwin\",\"version\":\"\"}}"}
+>> responseHandler.js:11:12 [master] pid:1883 Recieve HTTP Request from Client[2017-07-05 00:37:10]: method: POST url: /wd/hub/session, jsonBody: {"desiredCapabilities":{"platformName":"iOS","platformVersion":"10.3.2","deviceName":"露娜萌","udid":"78fe1acf23525c7efc6ed35a4a959599c24df814","bundleId":"cn.pocketwallet.pocketwallet","autoAcceptAlerts":true}}
+>> session.js:47:10 [master] pid:1883 Creating session, sessionId: dad65570-c1ee-4c08-93dd-e4a10d2ab8e8.
+/usr/local/lib/node_modules/macaca-ios/node_modules/_ios-device@0.1.4@ios-device/node_modules/ios-deploy/build/Release/ios-deploy
+>> responseHandler.js:54:12 [master] pid:1883 Send Error Respone to Client: UnknownError: App 'cn.pocketwallet.pocketwallet' is neither installed, nor provided!
+>> responseHandler.js:60:14 [master] pid:1883 UnknownError: App 'cn.pocketwallet.pocketwallet' is neither installed, nor provided!
+    at IOS.startRealDevice (/usr/local/lib/node_modules/macaca-ios/lib/macaca-ios.js:241:11)
+    at IOS.startRealDevice.next (<anonymous>)
+    at onFulfilled (/usr/local/lib/node_modules/macaca-cli/node_modules/co/index.js:65:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+>> responseHandler.js:76:14 [master] pid:1883 Send Bad HTTP Respone to Client[2017-07-05 00:37:11]: {"sessionId":"dad65570-c1ee-4c08-93dd-e4a10d2ab8e8","status":13,"value":{"message":"App 'cn.pocketwallet.pocketwallet' is neither installed, nor provided!"}}

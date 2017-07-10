@@ -1,0 +1,59 @@
+2017-07-01 17:25:38,325 - 192.168.56.101:5555 - INFO - platformName: Android
+2017-07-01 17:25:38,328 - 192.168.56.101:5555 - INFO - udid: 192.168.56.101:5555
+2017-07-01 17:25:38,328 - 192.168.56.101:5555 - INFO - package: cn.pocketwallet.pocketwallet
+
+2017-07-01 17:25:38,328 - 192.168.56.101:5555 - INFO - autoAcceptAlerts: True
+
+2017-07-01 17:25:38,329 - 192.168.56.101:5555 - INFO - macaca server port: 3467
+
+2017-07-01 17:25:53,589 - 192.168.56.101:5555 - INFO - --> skip_wizard_to_home
+2017-07-01 17:25:53,590 - 192.168.56.101:5555 - INFO - 	--> WizardPage.wait_page
+2017-07-01 17:25:53,670 - 192.168.56.101:5555 - INFO - 	--> WizardPage.skip
+2017-07-01 17:26:13,420 - 192.168.56.101:5555 - INFO - 	--> WizardPage.enter
+2017-07-01 17:26:16,572 - 192.168.56.101:5555 - INFO - <-- skip_wizard_to_home, Success
+
+2017-07-01 17:26:16,573 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUpClass
+2017-07-01 17:26:16,574 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUpClass, Success
+
+2017-07-01 17:26:16,574 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUp
+2017-07-01 17:26:16,575 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUp, Success
+
+2017-07-01 17:26:16,575 - 192.168.56.101:5555 - INFO - --> PWHomePage.test_HomePage_001_Open
+2017-07-01 17:26:16,575 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.wait_page
+2017-07-01 17:26:16,576 - 192.168.56.101:5555 - ERROR - Exception, No section: 'HomePage'
+2017-07-01 17:26:16,577 - 192.168.56.101:5555 - ERROR - 	<-- PocketWalletHomePage.wait_page, Exception, Error
+2017-07-01 17:26:17,901 - 192.168.56.101:5555 - ERROR - Exception, IMAGE:PocketWalletHomePage.wait_page-20170701172616.PNG
+2017-07-01 17:26:17,902 - 192.168.56.101:5555 - ERROR - <-- PWHomePage.test_HomePage_001_Open, Exception, Error
+
+2017-07-01 17:26:17,902 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDown
+2017-07-01 17:26:17,902 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDown, Success
+
+2017-07-01 17:26:17,904 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUp
+2017-07-01 17:26:17,904 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUp, Success
+
+2017-07-01 17:26:17,905 - 192.168.56.101:5555 - INFO - --> PWHomePage.test_HomePage_002_Login_Pwd
+2017-07-01 17:26:17,905 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.click_usr_account
+2017-07-01 17:26:17,905 - 192.168.56.101:5555 - ERROR - Exception, No section: 'HomePage'
+2017-07-01 17:26:17,905 - 192.168.56.101:5555 - ERROR - 	<-- PocketWalletHomePage.click_usr_account, Exception, Error
+2017-07-01 17:26:19,121 - 192.168.56.101:5555 - ERROR - Exception, IMAGE:PocketWalletHomePage.click_usr_account-20170701172617.PNG
+2017-07-01 17:26:19,122 - 192.168.56.101:5555 - ERROR - <-- PWHomePage.test_HomePage_002_Login_Pwd, Exception, Error
+
+2017-07-01 17:26:19,122 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDown
+2017-07-01 17:26:19,122 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDown, Success
+
+2017-07-01 17:26:19,123 - 192.168.56.101:5555 - INFO - --> PWHomePage.setUp
+2017-07-01 17:26:19,123 - 192.168.56.101:5555 - INFO - <-- PWHomePage.setUp, Success
+
+2017-07-01 17:26:19,123 - 192.168.56.101:5555 - INFO - --> PWHomePage.test_HomePage_003_Withdraw
+2017-07-01 17:26:19,123 - 192.168.56.101:5555 - INFO - 	--> PocketWalletHomePage.click_tx
+2017-07-01 17:26:19,124 - 192.168.56.101:5555 - ERROR - Exception, No section: 'HomePage'
+2017-07-01 17:26:19,124 - 192.168.56.101:5555 - ERROR - 	<-- PocketWalletHomePage.click_tx, Exception, Error
+2017-07-01 17:26:20,304 - 192.168.56.101:5555 - ERROR - Exception, IMAGE:PocketWalletHomePage.click_tx-20170701172619.PNG
+2017-07-01 17:26:20,304 - 192.168.56.101:5555 - ERROR - <-- PWHomePage.test_HomePage_003_Withdraw, Exception, Error
+
+2017-07-01 17:26:20,305 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDown
+2017-07-01 17:26:20,305 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDown, Success
+
+2017-07-01 17:26:20,305 - 192.168.56.101:5555 - INFO - --> PWHomePage.tearDownClass
+2017-07-01 17:26:20,306 - 192.168.56.101:5555 - INFO - <-- PWHomePage.tearDownClass, Success
+
